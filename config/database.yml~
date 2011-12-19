@@ -52,4 +52,4 @@ production:
   database: subtitleforme_production
   pool: 5
   username: subtitleforme
-  password: subtitleforme
+  password: 
