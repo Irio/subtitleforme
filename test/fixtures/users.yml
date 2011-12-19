@@ -4,18 +4,28 @@ complete:
   nick: Pele
   password: iampele
   email: pele@flamengo.com
+  group_id: 1
 
 without_nick:
   nick:
   password: iampele
   email: pele@flamengo.com
+  group_id: 1
 
 without_password:
   nick: Pele
   password:
   email: pele@flamengo.com
+  group_id: 1
 
 without_email:
   nick: Pele
   password: iampele
   email:
+  group_id: 1
+
+without_group:
+  nick: Pele
+  password: iampele
+  email:
+  group_id:
