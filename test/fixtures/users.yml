@@ -2,13 +2,13 @@
 
 complete:
   nick: Pele
-  password: iampele
+  password: pele
   email: pele@flamengo.com
   group_id: 1
 
 without_nick:
   nick:
-  password: iampele
+  password: pele
   email: pele@flamengo.com
   group_id: 1
 
@@ -20,12 +20,12 @@ without_password:
 
 without_email:
   nick: Pele
-  password: iampele
+  password: pele
   email:
   group_id: 1
 
 without_group:
   nick: Pele
-  password: iampele
+  password: pele
   email:
   group_id:

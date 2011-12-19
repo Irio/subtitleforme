@@ -20,4 +20,8 @@ class UserTest < ActiveSupport::TestCase
   test "should accept a user without group" do
     assert users(:without_group).save
   end
+
+  test "should encrypt his password with md5" do
+    assert_equal '476917cf3c5e4dfa272ab61ffadbab1f', users(:complete).password # pele with md5
+  end
 end
