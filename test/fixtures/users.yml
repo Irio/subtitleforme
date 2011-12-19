@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+complete:
+  nick: Pele
+  password: iampele
+  email: pele@flamengo.com
+
+without_nick:
+  nick:
+  password: iampele
+  email: pele@flamengo.com
+
+without_password:
+  nick: Pele
+  password:
+  email: pele@flamengo.com
+
+without_email:
+  nick: Pele
+  password: iampele
+  email:
