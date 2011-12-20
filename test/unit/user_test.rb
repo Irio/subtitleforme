@@ -13,10 +13,6 @@ class UserTest < ActiveSupport::TestCase
     assert not(users(:without_email).save)
   end
 
-  test "should associate a user" do
-    assert not(users(:without_email).save)
-  end
-
   test "should accept a user without group" do
     assert users(:without_group).save
   end
@@ -26,7 +22,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "should not accept a invalid email" do
-    user = users(:complete)
+    user       = users(:complete)
     user.email = 'qweqwe@qwe'
     assert not(user.save)
   end

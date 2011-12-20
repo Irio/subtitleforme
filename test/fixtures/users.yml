@@ -27,5 +27,5 @@ without_email:
 without_group:
   nick: Pele
   password: pele
-  email:
+  email: pele@flamengo.com
   group_id:
