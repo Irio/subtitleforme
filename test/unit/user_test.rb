@@ -24,4 +24,10 @@ class UserTest < ActiveSupport::TestCase
   test "should encrypt his password with md5" do
     assert_equal '476917cf3c5e4dfa272ab61ffadbab1f', users(:complete).password # pele with md5
   end
+
+  test "should not accept a invalid email" do
+    user = users(:complete)
+    user.email = 'qweqwe@qwe'
+    assert not(user.save)
+  end
 end

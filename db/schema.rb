@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111219235304) do
+ActiveRecord::Schema.define(:version => 20111220102057) do
 
   create_table "groups", :force => true do |t|
     t.string   "name"
@@ -27,6 +27,18 @@ ActiveRecord::Schema.define(:version => 20111219235304) do
   end
 
   add_index "releases", ["video_id"], :name => "index_releases_on_video_id"
+
+  create_table "subtitles", :force => true do |t|
+    t.integer  "group_id"
+    t.integer  "user_id"
+    t.integer  "release_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "subtitles", ["group_id"], :name => "index_subtitles_on_group_id"
+  add_index "subtitles", ["release_id"], :name => "index_subtitles_on_release_id"
+  add_index "subtitles", ["user_id"], :name => "index_subtitles_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "nick"
