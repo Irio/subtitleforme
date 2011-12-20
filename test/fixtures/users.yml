@@ -6,26 +6,32 @@ complete:
   email: pele@flamengo.com
   group_id: 1
 
+complete_2:
+  nick: Juquinha
+  password: blabla
+  email: juquinha@gmail.com
+  group_id: 1
+
 without_nick:
   nick:
   password: pele
-  email: pele@flamengo.com
+  email: qwe@flamengo.com
   group_id: 1
 
 without_password:
-  nick: Pele
+  nick: Juca
   password:
-  email: pele@flamengo.com
+  email: juca@gmail.com
   group_id: 1
 
 without_email:
-  nick: Pele
+  nick: John
   password: pele
   email:
   group_id: 1
 
 without_group:
-  nick: Pele
+  nick: Marta
   password: pele
-  email: pele@flamengo.com
+  email: marta@gmail.com
   group_id:
