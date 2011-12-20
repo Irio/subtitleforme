@@ -2,6 +2,7 @@ require 'test_helper'
 
 class ReleaseTest < ActiveSupport::TestCase
   test "should accept a release with name" do
+    videos(:the_shining).save
     assert releases(:the_shining).save
   end
 

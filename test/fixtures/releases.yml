@@ -2,11 +2,11 @@
 
 the_shining:
   name: The Shining 1980 720p HDDVD x264 SiNNERS
-  video: 1
+  video: the_shining
 
 titanic:
   name: Titanic 1997 720p HDTV XViD AC3 FLAWL3SS
-  video: 1
+  video: the_shining
 
 without_video:
   name: The Shining 1980 720p HDDVD x264 SiNNERS
@@ -14,4 +14,4 @@ without_video:
 
 without_name:
   name:
-  video: 1
+  video: the_shining
