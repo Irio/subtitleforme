@@ -5,11 +5,11 @@ class VideoTest < ActiveSupport::TestCase
     assert videos(:the_shining).save
   end
 
-  test "should accept a video without imdb_id" do
+  test "should accept a video without imdb_id, but with tmdb_id" do
     assert videos(:without_imdb_id).save
   end
 
-  test "should accept a video without tmdb_id" do
+  test "should accept a video without tmdb_id, but with imdb_id" do
     assert videos(:without_tmdb_id).save
   end
 

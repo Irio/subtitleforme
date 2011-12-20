@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class SubtitleTest < ActiveSupport::TestCase
-  test "should accept a subtitle with name" do
+  test "should accept a subtitle with all attributes" do
+    groups(:complete).save
+    users(:complete).save
+    videos(:the_shining).save
+    releases(:the_shining).save
     assert subtitles(:complete).save
   end
 

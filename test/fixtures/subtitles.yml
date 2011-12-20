@@ -1,21 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 complete:
-  group: 1
-  user: 1
-  release: 1
+  group: complete
+  user: complete
+  release: the_shining
 
 without_group:
   group:
-  user: 1
-  release: 1
+  user: complete
+  release: the_shining
 
 without_user:
-  group: 1
+  group: complete
   user:
-  release: 1
+  release: the_shining
 
 without_release:
-  group: 1
-  user: 1
+  group: complete
+  user: complete
   release:

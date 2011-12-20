@@ -4,34 +4,34 @@ complete:
   nick: Pele
   password: pele
   email: pele@flamengo.com
-  group_id: 1
+  group: complete
 
 complete_2:
   nick: Juquinha
   password: blabla
   email: juquinha@gmail.com
-  group_id: 1
+  group: complete
 
 without_nick:
   nick:
   password: pele
   email: qwe@flamengo.com
-  group_id: 1
+  group: complete
 
 without_password:
   nick: Juca
   password:
   email: juca@gmail.com
-  group_id: 1
+  group: complete
 
 without_email:
   nick: John
   password: pele
   email:
-  group_id: 1
+  group: complete
 
 without_group:
   nick: Marta
   password: pele
   email: marta@gmail.com
-  group_id:
+  group:
