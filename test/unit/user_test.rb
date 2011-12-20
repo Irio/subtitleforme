@@ -35,14 +35,14 @@ class UserTest < ActiveSupport::TestCase
     assert not(user.save)
   end
 
-  test "should not two users with the same nick" do
+  test "should not accept two users with the same nick" do
     users(:complete).save
     with_nick_chosen      = users(:complete_2)
     with_nick_chosen.nick = users(:complete).nick
     assert not(with_nick_chosen.save)
   end
 
-  test "should not two users with the same email" do
+  test "should not accept two users with the same email" do
     users(:complete).save
     with_email_chosen       = users(:complete_2)
     with_email_chosen.email = users(:complete).email
