@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+the_shining:
+  name: The Shining 1980 720p HDDVD x264 SiNNERS
+  video: 1
+
+without_name:
+  name:
+  video: 1
+
+without_video:
+  name: The Shining 1980 720p HDDVD x264 SiNNERS
+  video:
