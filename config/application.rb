@@ -45,5 +45,9 @@ module Subtitleforme
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Set TMDb API
+    Tmdb.api_key = "02b2af5382428f21e069dbfab389d286"
+    Tmdb.default_language = "pt-BR"
   end
 end
