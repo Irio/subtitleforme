@@ -1,0 +1,5 @@
+<% @last_subtitles.each do |subtitle| %>
+  <div class="subtitle_box">
+    <%= time_ago_in_words(subtitle.created_at) %> ago
+  </div>
+<% end %>

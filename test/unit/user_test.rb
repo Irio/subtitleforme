@@ -48,4 +48,8 @@ class UserTest < ActiveSupport::TestCase
     with_email_chosen.email = users(:complete).email
     assert not(with_email_chosen.save)
   end
+
+  test "should create a git repository to the user" do
+    flunk
+  end
 end
