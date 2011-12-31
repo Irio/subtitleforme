@@ -1,0 +1,5 @@
+g=Group.create :name=>'Hellsubs'
+u=User.create :nick=>'IrioMk', :password=>'f', :email=>'irio@tribow.com.br', :group_id=>g
+v=Video.create :imdb_id=>'tt0081505', :tmdb_id=>694
+r=Release.create :name=>'The Shining 1980 720p HDDVD x264 SiNNERS', :video_id=>v
+s=Subtitle.create :group_id=>g, :user_id=>u, :release_id=>r
