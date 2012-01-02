@@ -36,7 +36,7 @@ class VideoTest < ActiveSupport::TestCase
   test "should have plot method" do
     assert (videos(:the_shining).respond_to? 'plot')
   end
-=begin
+  
   test "title method should return expected information" do
     if videos(:the_shining).respond_to? 'title'
       assert_equal 'O Iluminado', videos(:the_shining).title
@@ -60,5 +60,4 @@ class VideoTest < ActiveSupport::TestCase
       flunk
     end
   end
-=end
 end

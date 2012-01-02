@@ -9,8 +9,4 @@ class GroupTest < ActiveSupport::TestCase
     groups(:complete).name = nil
     assert not(groups(:complete).save)
   end
-
-  test "should create a git repository to the group" do
-    flunk
-  end
 end

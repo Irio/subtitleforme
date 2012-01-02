@@ -1,6 +1,6 @@
 Subtitleforme::Application.routes.draw do
 
-  resources :users
+  resources :users, :groups
 
   root :to => 'subtitles#home'
 

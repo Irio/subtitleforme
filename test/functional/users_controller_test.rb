@@ -3,7 +3,7 @@ require 'test_helper'
 class UsersControllerTest < ActionController::TestCase
   test "should get new" do
     get :new
-    assert_response :success, 'doesnt got success response'
+    assert_response :success, 'doesnt got successful response'
   end
 
   test "should get create" do
@@ -15,7 +15,7 @@ class UsersControllerTest < ActionController::TestCase
 
     assert_equal 1, User.count - users_before, 'doesnt created a user'
 
-    assert_response :redirect, 'doesnt got success response'
+    assert_response :redirect, 'doesnt got successful response'
 
     assert_redirected_to :root, 'doesnt redicted to home'
 
@@ -27,7 +27,7 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should get show" do
-    assert_response :success, 'doesnt got success response'
+    assert_response :success, 'doesnt got successful response'
     get :show, { :id => users(:complete).id }
     assert_not_nil assigns(:user), 'doesnt assigned user'
   end
