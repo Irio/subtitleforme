@@ -11,27 +11,3 @@ complete_2:
   password: blabla
   email: juquinha@gmail.com
   group: complete
-
-without_nick:
-  nick:
-  password: pele
-  email: qwe@flamengo.com
-  group: complete
-
-without_password:
-  nick: Juca
-  password:
-  email: juca@gmail.com
-  group: complete
-
-without_email:
-  nick: John
-  password: pele
-  email:
-  group: complete
-
-without_group:
-  nick: Marta
-  password: pele
-  email: marta@gmail.com
-  group:

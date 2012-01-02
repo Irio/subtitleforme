@@ -4,18 +4,3 @@ complete:
   group: complete
   user: complete
   release: the_shining
-
-without_group:
-  group:
-  user: complete
-  release: the_shining
-
-without_user:
-  group: complete
-  user:
-  release: the_shining
-
-without_release:
-  group: complete
-  user: complete
-  release:

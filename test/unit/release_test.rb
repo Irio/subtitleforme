@@ -7,15 +7,16 @@ class ReleaseTest < ActiveSupport::TestCase
   end
 
   test "should not accept a release without name" do
-    assert not(releases(:without_name).save)
+    releases(:the_shining).name = nil
+    assert not(releases(:the_shining).save)
   end
 
   test "should not accept a release without video" do
-    assert not(releases(:without_video).save)
+    releases(:the_shining).video = nil
+    assert not(releases(:the_shining).save)
   end
 
   test "should accept two releases with the same name" do
-    releases(:the_shining).save
     with_name_chosen      = releases(:titanic)
     with_name_chosen.name = releases(:the_shining).name
     assert with_name_chosen.save

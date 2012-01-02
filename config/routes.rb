@@ -1,4 +1,7 @@
 Subtitleforme::Application.routes.draw do
+
+  resources :users
+
   root :to => 'subtitles#home'
 
   # The priority is based upon order of creation:

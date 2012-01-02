@@ -6,15 +6,19 @@ class VideoTest < ActiveSupport::TestCase
   end
 
   test "should accept a video without imdb_id, but with tmdb_id" do
-    assert videos(:without_imdb_id).save
+    videos(:the_shining).imdb_id = nil
+    assert videos(:the_shining).save
   end
 
   test "should accept a video without tmdb_id, but with imdb_id" do
-    assert videos(:without_tmdb_id).save
+    videos(:the_shining).tmdb_id = nil
+    assert videos(:the_shining).save
   end
 
   test "should not accept a video without any id of movies site" do
-    assert not(Video.new.save)
+    videos(:the_shining).imdb_id = nil
+    videos(:the_shining).tmdb_id = nil
+    assert not(videos(:the_shining).save)
   end
 
   test "should have title method" do
@@ -32,7 +36,7 @@ class VideoTest < ActiveSupport::TestCase
   test "should have plot method" do
     assert (videos(:the_shining).respond_to? 'plot')
   end
-
+=begin
   test "title method should return expected information" do
     if videos(:the_shining).respond_to? 'title'
       assert_equal 'O Iluminado', videos(:the_shining).title
@@ -56,4 +60,5 @@ class VideoTest < ActiveSupport::TestCase
       flunk
     end
   end
+=end
 end

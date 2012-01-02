@@ -3,11 +3,3 @@
 the_shining:
   imdb_id: tt0081505
   tmdb_id: 694
-
-without_tmdb_id:
-  imdb_id: tt0081505
-  tmdb_id:
-
-without_imdb_id:
-  imdb_id:
-  tmdb_id: 694

@@ -2,6 +2,3 @@
 
 complete:
   name: MyGroup
-
-without_name:
-  name:

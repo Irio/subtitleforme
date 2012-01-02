@@ -10,14 +10,17 @@ class SubtitleTest < ActiveSupport::TestCase
   end
 
   test "should accept a subtitle without group" do
-    assert subtitles(:without_group).save
+    subtitles(:complete).group = nil
+    assert subtitles(:complete).save
   end
 
   test "should not accept a subtitle without user" do
-    assert not(subtitles(:without_user).save)
+    subtitles(:complete).user = nil
+    assert not(subtitles(:complete).save)
   end
 
   test "should not accept a subtitle without release" do
-    assert not(subtitles(:without_release).save)
+    subtitles(:complete).release = nil
+    assert not(subtitles(:complete).save)
   end
 end
