@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
 
   def create
     @group = Group.create params[:group]
-    @group.git_create
+    #@group.git_create
 
     redirect_to group_path(@group), :notice => 'Group ' + @group.name + ' created.'
   end

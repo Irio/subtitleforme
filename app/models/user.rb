@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
     self.password = Encryption.hash(self.password)
   end
 
-  def git_create
-    Git.init Repository.folder(self)
+  after_save do
+    repository = Repository.new(self)
   end
 end

@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create params[:user]
-    @user.git_create
+    #@user.git_create
 
     redirect_to :root, :notice => 'User ' + @user.nick + ' created.'
   end

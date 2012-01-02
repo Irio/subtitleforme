@@ -4,7 +4,7 @@ class Group < ActiveRecord::Base
   
   validates :name, :presence => true
 
-  def git_create
-    Git.init Repository.folder(self)
+  after_save do
+    repository = Repository.new(self)
   end
 end
