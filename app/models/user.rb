@@ -9,4 +9,8 @@ class User < ActiveRecord::Base
     raise ArgumentError, 'Missing password' if not self.password
     self.password = Encryption.hash(self.password)
   end
+
+  def git_create
+    Git.init Repository.folder(self)
+  end
 end
